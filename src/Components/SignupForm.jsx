@@ -64,8 +64,10 @@ const SignupForm = ({handleClose}) => {
                 message: 'username taken'
             });
     }
+}
 
   return (
+
     <Box
         p={3}
         style={{
@@ -145,6 +147,6 @@ const SignupForm = ({handleClose}) => {
     </Box>
   )
 }
-}
+
 
 export default SignupForm;
