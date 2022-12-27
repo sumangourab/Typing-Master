@@ -35,7 +35,7 @@ body::-webkit-scrollbar{
 .type-box{
     display:block;
     max-width: 1000px;
-    height: 250px;
+    height: 230px;
     margin-left:auto;
     margin-right:auto;
     overflow: hidden;
@@ -65,7 +65,8 @@ body::-webkit-scrollbar{
 }
 
 .incorrect{
-    color: red;
+    color: ${({theme})=>theme.incorrect};
+
 }
 
 .current{

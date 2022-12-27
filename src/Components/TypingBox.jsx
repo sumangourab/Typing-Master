@@ -83,6 +83,10 @@ const TypingBox = ({words}) => {
 
             }
 
+            if(wordSpanRef[currWordIndex+1].current.offsetLeft < wordSpanRef[currWordIndex].current.offsetLeft){
+                wordSpanRef[currWordIndex].current.scrollIntoView();
+            }
+
             wordSpanRef[currWordIndex+1].current.childNodes[0].className = 'char current';
             setCurrWordIndex(currWordIndex+1);
             setCurrCharIndex(0);

@@ -86,7 +86,7 @@ const AccountIcon = () => {
             setAlert({
                 open: true,
                 type: 'error',
-                message: 'google auth is not working'
+                message: 'login failed'
             });
         });
     }
@@ -107,7 +107,7 @@ const AccountIcon = () => {
             setAlert({
                 open: true,
                 type: 'error',
-                message: 'github auth is not working'
+                message: 'login failed'
             });
         });
     }
