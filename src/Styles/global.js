@@ -35,7 +35,7 @@ body::-webkit-scrollbar{
 .type-box{
     display:block;
     max-width: 1000px;
-    height: 230px;
+    height: 240px;
     margin-left:auto;
     margin-right:auto;
     overflow: hidden;
@@ -101,10 +101,15 @@ body::-webkit-scrollbar{
 
 .footer{
     display:flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-self: end;
     width: 1000px;
     margin-left:auto;
     margin-right:auto;
+}
+.actual-footer{
+    display: flex;
+    justify-content: space-between;
 }
 
 .stats-box{
@@ -150,13 +155,13 @@ a{
     margin-top: -70px;
 }
 
-.time-modes{
+.time-modes, .word-modes{
     display:flex;
 }
-.time{
+.time, .no-of-word{
     margin-right:15px;
 }
-.time:hover{
+.time:hover, .no-of-word:hover{
     color:${({theme})=>theme.typeBoxText};
     cursor: pointer;
 }
@@ -168,18 +173,12 @@ a{
     margin-right: auto;
     justify-content: space-between;
     align-items: center;
+    align-self: stretch;
 }
 .compare {
     display: flex;
     gap: 10;
     align-items: center;
-}
-.compare-btn{
-    cursor: pointer;
-    color: ${({theme})=>theme.background};
-    background: ${({theme})=>theme.title};
-    padding: 0.4rem;
-    border-radius: 5px;
 }
 
 .logo img {
@@ -296,5 +295,46 @@ justify-content: center;
 .logo{
     display: flex;
     gap: 10px;
+}
+.instruction{
+    color: ${({theme})=>theme.title};
+}
+.hint{
+    kbd{
+        background: ${({theme})=>theme.title};
+        color: ${({theme})=>theme.background};
+        padding: 2.5px 5px;
+        border-radius: 4px; 
+    }
+}
+.modees {
+    display:flex;
+    gap:10px;
+}
+.mode {
+    border: 1px solid ${({theme})=>theme.title};
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.mode:hover {
+    background-color: rgba(67, 255, 175, 0.1);
+}
+.css-9tj150-MuiButton-endIcon {
+    margin-left: 0;
+}
+.top {
+    margin-top: 20px;
+}
+.restart {
+    border: 1px solid ${({theme})=>theme.title};
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    color: ${({theme})=>theme.title};
+}
+.restart:hover {
+    background-color:rgba(67, 255, 175, 0.1) ;
+    border-color:${({theme})=>theme.title} ;
 }
 `;

@@ -66,9 +66,7 @@ const CompareButton = () => {
 
     return (
         <div>
-            <div className='compare-btn' onClick={handleClick}>
-                COMPARE
-            </div>
+            <Button className='restart compr' variant="outlined" onClick={handleClick}>Compare</Button>
 
             <Modal
                 open={open}

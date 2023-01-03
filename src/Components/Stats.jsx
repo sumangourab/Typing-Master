@@ -3,8 +3,10 @@ import Graph from './Graph'
 import { db, auth } from '../firebaseConfig';
 import { useAlert } from '../Context/AlertContext';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import { Button } from '@mui/material';
 
-const Stats = ({wpm, accuracy, correctChars, incorrectChars, missedChars, extraChars,graphData}) => {
+const Stats = ({wpm, resetTest, accuracy, correctChars, incorrectChars, missedChars, extraChars,graphData}) => {
     var timeSet = new Set(); 
     const {setAlert} = useAlert();
     const newGraph = graphData.filter((i)=>{
@@ -71,6 +73,9 @@ const Stats = ({wpm, accuracy, correctChars, incorrectChars, missedChars, extraC
             <div className="subtitle">{accuracy}%</div>
             <div className="title">Characters</div>
             <div className="subtitle">{correctChars}/{incorrectChars}/{missedChars}/{extraChars}</div>
+            <Button className='restart top' variant="outlined" endIcon={<RestartAltIcon />} onClick={resetTest}>
+  Restart
+</Button>
         </div>
         <div className="right-stats">
             <Graph graphData={newGraph}/>

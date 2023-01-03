@@ -4,7 +4,8 @@ const darkTheme = {
     title: '#a5a4a4',
     typeBoxText:'#526777',
     correct:'green',
-    incorrect:'red'
+    incorrect:'red',
+    hover:'#a5a4a4'
 }
 
 const purpleTheme = {
@@ -14,7 +15,8 @@ const purpleTheme = {
     title:'#5fc249',
     typeBoxText:'#0d1014',
     correct:'green',
-    incorrect:'red'
+    incorrect:'red',
+    hoover:'#5fc249'
 }
 
 const superUserTheme = {
@@ -23,7 +25,8 @@ const superUserTheme = {
     title: '#43FFAF',
     typeBoxText: '#526777',
     correct:'#43ffaf',
-    incorrect:'red'
+    incorrect:'red',
+    hover:'#43ffaf'
 }
 const lightUserTheme = {
     label: 'Light',
@@ -31,7 +34,8 @@ const lightUserTheme = {
     title: '#252525',
     typeBoxText: '#526777',
     correct:'#20077b',
-    incorrect:'red'
+    incorrect:'red',
+    hover:'#252525'
 }
 const blueUserTheme = {
     label: 'blue',
@@ -39,7 +43,8 @@ const blueUserTheme = {
     title: '#252525',
     typeBoxText: '#a3adb5',
     correct:'green',
-    incorrect:'red'
+    incorrect:'red',
+    hover:'#252525'
 }
 const greenUserTheme = {
     label: 'green',
@@ -47,7 +52,8 @@ const greenUserTheme = {
     title: '#252525',
     typeBoxText: '#a3adb5',
     correct:'green',
-    incorrect:'red'
+    incorrect:'red',
+    hover:'#252525'
 }
 const pinkUserTheme = {
     label: 'pink',
@@ -55,7 +61,8 @@ const pinkUserTheme = {
     title: '#13cb13',
     typeBoxText: '#a3adb5',
     correct:'green',
-    incorrect:'#381010'
+    incorrect:'#381010',
+    hover:'#13cb13'
 }
 
 
